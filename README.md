@@ -169,7 +169,7 @@ Make your changes.
 Test the website in a browser.
 Commit your changes with a descriptive message.
 Open a pull request describing your improvements.
-👩💻 Author
+👩‍💻 Author
 
 Mohini Jha
 
