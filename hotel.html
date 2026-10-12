@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Booking | GoaScape</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">✦ YOUR COMFORT, YOUR GOA ESCAPE ✦</div>
+<header class="navbar">
+<a href="index.html" class="logo"><span class="logo-icon">✦</span><span>GOA<span class="teal">SCAPE</span><small>DISCOVER THE MAGIC</small></span></a>
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<nav id="navLinks"><a href="index.html">Home</a><a href="heritage.html">Heritage</a><a href="hotel.html">Hotel Booking</a><a href="gallery.html">Gallery</a><a href="travel-tips.html">Travel Guide</a></nav>
+</header>
+
+<section class="page-banner">
+<p class="eyebrow">FIND YOUR PERFECT STAY</p>
+<h1>Stay a Little Longer</h1>
+<p>Tell us your travel preferences to plan a comfortable Goa getaway.</p>
+</section>
+
+<section class="section">
+<div class="section-heading">
+<p class="eyebrow">BOOKING ENQUIRY</p>
+<h2>Let's Plan Your Stay</h2>
+<p>Complete the form below with your accommodation preferences.</p>
+</div>
+
+<div class="booking-wrap">
+<form id="bookingForm">
+<div class="form-grid">
+
+<div class="form-field">
+<label for="fullName">Full Name *</label>
+<input id="fullName" name="fullName" type="text" required placeholder="Enter your full name">
+</div>
+
+<div class="form-field">
+<label for="email">Email Address *</label>
+<input id="email" name="email" type="email" required placeholder="you@example.com">
+</div>
+
+<div class="form-field">
+<label for="phone">Mobile Number *</label>
+<input id="phone" name="phone" type="tel" required pattern="[0-9 +()-]{10,16}" placeholder="Enter contact number">
+</div>
+
+<div class="form-field">
+<label for="city">City of Residence</label>
+<input id="city" name="city" type="text" placeholder="Your city">
+</div>
+
+<div class="form-field">
+<label for="checkin">Check-in Date *</label>
+<input id="checkin" name="checkin" type="date" required>
+</div>
+
+<div class="form-field">
+<label for="checkout">Check-out Date *</label>
+<input id="checkout" name="checkout" type="date" required>
+</div>
+
+<div class="form-field">
+<label for="guests">Number of Guests *</label>
+<select id="guests" name="guests" required>
+<option value="">Choose guests</option>
+<option>1 Guest</option><option>2 Guests</option>
+<option>3 Guests</option><option>4 Guests</option>
+<option>5+ Guests</option>
+</select>
+</div>
+
+<div class="form-field">
+<label for="rooms">Number of Rooms *</label>
+<select id="rooms" name="rooms" required>
+<option value="">Choose rooms</option>
+<option>1 Room</option><option>2 Rooms</option>
+<option>3 Rooms</option><option>4+ Rooms</option>
+</select>
+</div>
+
+<div class="form-field">
+<label for="hotelType">Preferred Accommodation</label>
+<select id="hotelType" name="hotelType">
+<option>Beach Resort</option><option>Luxury Hotel</option>
+<option>Budget Hotel</option><option>Boutique Stay</option>
+<option>Homestay / Villa</option>
+</select>
+</div>
+
+<div class="form-field">
+<label for="budget">Budget per Night</label>
+<select id="budget" name="budget">
+<option>Below ₹2,000</option><option>₹2,000–₹5,000</option>
+<option>₹5,000–₹10,000</option><option>Above ₹10,000</option>
+</select>
+</div>
+
+<div class="form-field full">
+<label for="area">Preferred Area in Goa</label>
+<select id="area" name="area">
+<option>North Goa</option><option>South Goa</option>
+<option>Panaji</option><option>Near Old Goa heritage sites</option>
+<option>No preference</option>
+</select>
+</div>
+
+<div class="form-field full">
+<label for="requests">Special Requests</label>
+<textarea id="requests" name="requests" placeholder="Accessibility needs, arrival time or other preferences..."></textarea>
+</div>
+
+<div class="form-field full">
+<label><input type="checkbox" required style="width:auto"> I confirm the details are correct. *</label>
+<p class="form-note">Demo only: this form does not make a real reservation or process payment.</p>
+<button type="submit" class="btn">SUBMIT BOOKING ENQUIRY ↗</button>
+</div>
+
+</div>
+</form>
+<div id="bookingMessage" class="info-box" style="display:none;margin-top:20px"></div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-grid">
+<div><a href="index.html" class="logo footer-logo">✦ GOA<span class="teal">SCAPE</span></a><p>Your guide to Goa's beaches, heritage and culture.</p></div>
+<div><h3>Explore</h3><a href="heritage.html">Heritage</a><a href="gallery.html">Gallery</a></div>
+<div><h3>Plan Your Trip</h3><a href="travel-tips.html">Travel Guide</a><p>Emergency: 112</p></div>
+</div>
+<div class="copyright">© Presenting By MOhini Jha</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
